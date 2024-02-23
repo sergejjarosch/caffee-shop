@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+h1{
+    font-family: "Playfair Display", serif;
+}
+h2{
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+h3{
+    font-family: "Source Sans 3", sans-serif;
+}
+h4{
+    font-family: "Source Sans 3", sans-serif;
+}
+p{
+    font-family: "Source Sans 3", sans-serif;
+}
+li{
+    font-family: "Source Sans 3", sans-serif;
+}
+a{
+    font-family: "Source Sans 3", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --dark-collor: #353535;
+    --main-accent: #FFEB56;
+    --second-accent: #A8DCD9;
+    --third-accent: #F2D1C9;
+    --shadow: #03030395;
+
+
+}
+
+.button-52 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    touch-action: manipulation;
+}
+.button-52:after {
+    content: "";
+    background-color: #ffeb56;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+.button-52:hover:after {
+    top: 0px;
+    left: 0px;
+
+}
+
+.container{
+    display: flex;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.little-container{
+    display: flex;
+}
+header {
+    
+    flex-direction: column;
+    .logo {
+        padding: 10px 40px ;
+
+    }
+    .header-top{
+
+        align-items: start;    
+        nav {
+            align-items: baseline;
+            ul {
+                list-style: none;
+                li {
+                    padding-inline: 20px;
+                }
+            }
+
+        }
+        .login {
+            margin-left: auto;
+            padding: 10px 40px 8px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            user-select: none;
+            touch-action: manipulation;
+
+        }
+    }
+    .hero{
+        .action{
+            z-index: 2;
+            max-width: 350px;
+            height: 200px;
+            padding: 20px 40px 50px;
+        }
+        .cards{
+            position: relative;
+            padding: 10px;
+            z-index: 3;
+            width: 50%;
+
+            .card {
+                margin: 5px;
+                background-color:var(--dark-collor);
+                color: rgb(255, 255, 255);
+                width: 180px;
+                height: 260px;
+                margin-left: -30px;
+                
+                border-radius: 16px;
+                border: solid px var(--shadow);
+                img{
+                    border-radius: 7px;
+                }
+            }
+            .card-inside{
+                margin-left: 20px;
+                margin-top: 25px;
+                scale: 1.1;
+                h3{
+                    margin-top: -2px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 17px;
+                    letter-spacing: 0.5px;
+                }
+                h4{
+                    columns: var(--third-accent);
+                    margin-top: -17px;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                p{
+                    margin-top: -14px;
+                    font-size: 8px;
+                    margin-right: 32px;
+                }
+            }
+
+            .card-1{
+                position: absolute;
+                left: 220px;
+                top: 60px;
+                box-shadow: 30px 10px 15px -20px var(--shadow);
+                transform:
+                perspective(800px)
+                rotateY(-5deg) 
+                rotateX(35deg)
+                rotateZ(65deg)
+                scale(0.9);
+            }
+            .card-2{
+                position: absolute;
+                left: 130px;
+                top: 10px;
+                box-shadow: 20px 5px 30px -10px #000000;
+                transform:
+                perspective(800px)
+                rotateY(-15deg) 
+                rotateX(25deg)
+                rotateZ(35deg)
+                scale(0.9);
+            }
+            .card-3{
+                position: absolute;
+                left: 30px;
+                box-shadow: 20px 15px 20px -5px var(--shadow);
+                transform:
+                perspective(800px)
+                rotateY(-15deg) 
+                rotateX(10deg)
+                rotateZ(5deg)
+                scale(0.9);
+            }
+        }
+    }
+}
+.produkte{
+    background-image: linear-gradient();
+    padding-top: 50px;
+    h2{
+        justify-content: center;
+    }
+
+
+}
+.auswahl{
+    background-color: var(--dark-collor);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.kleinekarte{   
+    padding: 10px;
+    border-radius: 10px;
+    width: 140px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 20px 25px 20px -5px var(--shadow);
+
+    img{
+        border-radius: 6px;
+    }
+    h4{
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    p{
+        margin-top: -20px;
+        font-size: 14px;
+    }
+
+}
+.kleine-1{
+    margin-left: 80px;
+}
+.kleine-4{
+    margin-right: 80px;
+}
+.moto{
+    flex-direction: column;
+
+    h2{
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    hr{
+        z-index: 0;
+        padding: 20px;
+        width: 550px;
+        background-color: var(--main-accent);
+        border: none;
+        margin-top: -65px;
+    }
+    p{
+        margin-left: 55px;
+        margin-right: auto;
+        margin-top: 5px;
+
+    }
+}
+.roestung{
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
+    div{
+        height: 220px;
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px -8px var(--shadow);
+
+        img{
+            border-radius: 5px;
+        }
+    }
+    .div1{
+        margin-left: 7%;
+    }
+    .div3{
+        margin-right: 7%;
+    }
+}
+.lieferung{
+    background-color: rgb(127, 127, 255);
+
+    .container{
+        background-color: rgb(229, 250, 215);
+    }
+    .beschreibung{
+        background-color: rgb(114, 255, 194);
+        width: 460px;
+    }
+    .bilderwahl{
+        background-color: aqua;
+    }
+}
