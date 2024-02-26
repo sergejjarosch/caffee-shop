@@ -38,8 +38,6 @@ ul{
     --second-accent: #A8DCD9;
     --third-accent: #F2D1C9;
     --shadow: #03030375;
-
-
 }
 
 .button-52 {
@@ -70,7 +68,6 @@ ul{
     left: 0px;
 
 }
-
 .container{
     display: flex;
     width: 900px;
@@ -313,14 +310,92 @@ header {
 }
 
 .lieferung{
+
     margin-top: 120px;
-    .container{
+    position: relative;
+
+}
+.content-lieferung{
+
+    width: 400px;
+
+}
+
+.images-delev{
+    display: flex;
+    position: absolute;
+    margin-left: -10px;
+    img{
+        border-radius: 7px;
+        
+        box-shadow: 10px 10px 5px -8px var(--shadow);
+        scale: 0.75;
+        border: solid 12px #ffffff;
+        
     }
-    .beschreibung{
-        margin-left: 60px;
-        width: 460px;
+    .pic1{
+        margin-left: -30px;
+        margin-top: -60px;
     }
-    .bilderwahl{
-        background-color: aqua;
+    .pic2{
+        margin-left: -150px;
+        
     }
+    .pic3{margin-left: -150px;
+        margin-top: 60px;
+    }
+
+}
+footer{
+    padding-top: 50px;
+    margin-top: 120px;
+    background-color: var(--dark-collor);
+    color: #ffffff;
+    line-height: 10px;
+    padding-bottom: 40px;
+
+    align-items: start;
+    a{
+    color: #ffffff;
+    line-height: 23px;
+
+    }
+}
+
+
+.logo-b{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.social{
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -90px;
+    margin-bottom: -80px;
+    scale: 0.3;
+    img{
+        mix-blend-mode: difference;
+    }
+
+}
+.adress{
+    
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.payment{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+}
+.menu-footer{
+    margin-right: auto;
+    margin-left: auto;
+}
+.legal{
+    margin-right: auto;
+    margin-left: auto;
 }
